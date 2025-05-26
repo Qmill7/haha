@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md " style="color: rgb(255, 137, 196);">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(216, 84, 128);" href="#">个人介绍</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:  rgb(216, 84, 128);" href="#">教育背景</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:  rgb(216, 84, 128);" href="#">旅游日记</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:  rgb(216, 84, 128);" href="#">兴趣爱好</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(216, 84, 128);" href="#">联系方式</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- 指示符 -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/4.jpg" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="image/5.jpg" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="image/6.jpg" class="d-block" style="width:100%">
+      </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <main class="container">
+    <div class="row">
+      <aside class="col-sm-3 mt-3">
+        <div class="card" >
+          <img class="card-img-top" src="image/11.jpg" alt="Card image" style="width:100%;padding: 2rem;">
+          <div class="card-body">
+            <h4 class="card-title">xuxu</h4>
+            <p class="card-text">自我介绍 [1]嗨～我是全能buff叠满的人间小宝藏！指尖能弹出星星旋律，画笔一挥魔法画面就出现，美貌与实力并存说的就是我啦！</p>
+            <a href="#" class="btn btn-danger">点赞</a>
+          </div>
+        </div>
+      </aside>
+      <section class="col-sm-9 mt-3">
+
+        <div class="card">
+          <div class="card-header">教育背景</div>
+          <div class="card-body">
+            <div class="list-group list-group-checkable">
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+                小学
+                <span class="d-block small opacity-50">2011-2017</span>
+              </label>
+
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                中学
+                <span class="d-block small opacity-50">2017-2020</span>
+              </label>
+
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                大专
+                <span class="d-block small opacity-50">2020-2024</span>
+              </label>
+
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios4">
+                实习
+                <span class="d-block small opacity-50">2024-2025</span>
+              </label>
+            </div>
+
+          </div>
+          <div class="card-footer">旅游日记</div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="list-group list-group-checkable">
+  
+                <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+                  北京
+                  <span class="d-block small "><img src="image/bj.jpg" style="width: 30%;"></span>
+                </label>
+  
+  
+                <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                云南
+                  <span class="d-block small "><img src="image/yn.jpg" style="width: 30%;"></span>
+                </label>
+  
+  
+              
+  
+                <label class="list-group-item py-3" for="listGroupCheckableRadios4">
+                 三亚
+                  <span class="d-block small "><img src="image/sy.jpg" style="width: 30%;"></span>
+                </label>
+              </div>
+  
+            </div>
+        </div>
+        <div class="card my-3">
+          <div class="card-header">兴趣爱好</div>
+          <div class="card-body">
+         <ul>
+           <li>唱歌</li>
+           <li>绘画</li>
+           <li>射箭</li>
+         </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer bg-dark text-light text-center p-5">联系方式：18854768912；地址：企鹅窝</footer>
+  <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
